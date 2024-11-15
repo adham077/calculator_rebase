@@ -1,6 +1,11 @@
 #include <stdio.h>
 #include <conio.h>
+
 #include "multiplication.c"
+
+#include <division.c>
+
+
 
 void scan_input(float*,float*);
 
@@ -15,6 +20,7 @@ int main(void){
         c = getch();
         
         switch(c){
+
             case '*':
                 scan_input(&a,&b);
                 printf("a*b = %d\n",multiplication(a,b));
@@ -24,6 +30,13 @@ int main(void){
                 scan_input(&a,&b);
                 printf("a%b = %d\n",float_modulus(a,b));
                 break;
+
+             
+             case '/':
+                scan_input(&a,&b);
+                printf("a*b=%d\n",Division(a,b));
+                break;
+     
             default:
                 printf("invalid operation\n");
 
