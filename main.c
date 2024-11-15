@@ -1,13 +1,13 @@
 #include <stdio.h>
 #include <conio.h>
 
+
 #include "multiplication.c"
-
-#include <division.c>
-
-
+#include "division.c"
 #include "modulus.c"
 #include "sub.c"
+#include "Add_Function.c"
+
 
 void scan_input(float*,float*);
 
@@ -22,11 +22,17 @@ int main(void){
         c = getch();
         
         switch(c){
+   
+            case '+':
+                scan_input(&a,&b);
+                printf("a+b=%d\n",AddFunction(a,b));
+                break;
 
             case '*':
                 scan_input(&a,&b);
                 printf("a*b = %d\n",multiplication(a,b));
                 break;
+
             
             case '%':
                 scan_input(&a,&b);
