@@ -16,7 +16,10 @@ int main(void){
         
         switch(c){
             
-     
+            case '%':
+                scan_input(&a,&b);
+                printf("a%b = %d\n",float_modulus(a,b));
+                break;
             default:
                 printf("invalid operation\n");
 
