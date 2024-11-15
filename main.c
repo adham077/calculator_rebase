@@ -6,6 +6,8 @@
 #include <division.c>
 
 
+#include "modulus.c"
+#include "sub.c"
 
 void scan_input(float*,float*);
 
